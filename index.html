@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HNGi11 Task 2</title>
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="profile">
+        <div id="date_time_title">
+          <span id="title">
+            <h2>HNGi11 Task 2</h2>
+          </span>
+
+          <span id="date_time">
+            <span id="time" data-testid="currentTimeUTC"></span>
+            <span id="day" data-testid="currentDay"></span>
+          </span>
+        </div>
+        <h4>Intern Profile</h4>
+        <div id="intern-profile">
+          <div id="agb-profile">
+            <img
+              src="assets/slackimG.png"
+              alt="Profile"
+              data-testid="slackProfilePicture"
+            />
+
+            <div id="info">
+              Full Name : <span> AGBOOLA, Samson Ifedolapo</span> <br />
+              Role : <span> Front-End Intern</span> <br />
+              Slack Display Name :
+              <span data-testid="slackDisplayName">Agboola</span> <br />
+              Slack Email :
+              <span data-testid="slackEmail"> agboolasamson602@gmail.com</span>
+            </div>
+          </div>
+          <div id="goals">
+            <h3>Aim in 2 years</h3>
+            <p>
+              My main aim in the tech industry is problem solving for life
+              convenience. Beginning with Front-end is just for the passion I
+              have for the web. In the next two years , I hope to be able to
+              buld a product , which will implement AI as well as hardware to
+              aid logical problem solving in the educational sector.
+            </p>
+          </div>
+        </div>
+
+        <div id="Misc">
+          <h3 id="HNG">Want to Learn about HNG?</h3>
+          <a href="hng.tech/learn" data-testid="hngLink">HNG learn</a>
+          <h3 style="color: rgba(255, 255, 255, 0.5)">Other Useful links</h3>
+          <a href="http://keyword.dog/" data-testid="keywordLink"
+            >keyword.dog</a
+          >
+          <a href="https://scrapeanyweb.site/" data-testid="scrapeanywebLink"
+            >Scrapeanywebsite</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
