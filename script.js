@@ -9,8 +9,22 @@ setInterval(() => {
   //set the innerHTML for time
   let meridian = h > 12 ? "PM" : "AM";
   let m = minute < 10 ? `0${minute}` : `${minute}`;
-  let utcTime =
-    h < 10 ? `0${h}:${m} ${meridian}` : `${h - 12}:${m} ${meridian}`;
+
+  function setUTCTime(h) {
+    switch (h) {
+      case h < 10:
+        return `0${h}:${m} ${meridian}`;
+
+      case h > 12:
+        return `${h - 12}:${m} ${meridian}`;
+
+      default:
+        return `${h}:${m} ${meridian}`;
+        break;
+    }
+  }
+
+  let utcTime = setUTCTime(h);
   document.getElementById("time").innerHTML = utcTime;
 
   //set the innerHTML for day
